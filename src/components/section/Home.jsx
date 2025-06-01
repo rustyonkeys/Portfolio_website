@@ -1,13 +1,15 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { HiOutlineSparkles } from 'react-icons/hi';
+import RevealOnScroll from '../RevealOnScroll';
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white relative"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-980 to-gray-800 text-white relative"
     >
+     <RevealOnScroll> 
       <div className="text-center z-10 px-6">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
           <Typewriter
@@ -40,11 +42,12 @@ export const Home = () => {
             href="#Contact"
             className="inline-flex items-center justify-center gap-2 px-8 py-3 border border-blue-500/50 text-blue-400 font-semibold rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:text-blue-300 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
           >
-            Connect With Me
+            Connect With Me/Resume
             <HiArrowNarrowRight className="text-xl" />
           </a>
         </div>
       </div>
+    </RevealOnScroll>
     </section>
   );
 };
